@@ -1,0 +1,38 @@
+\section{References}
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[0.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+\newcommand{\cvreference}[8]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{\addresssymbol~#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{#6\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\emailsymbol~\texttt{#7}\newline}%
+    \ifthenelse{\equal{#8}{}}{}{\phonesymbol~#8}}
+
+
+\cvdoublecolumn{
+ \cvreference{Dr. Mohan Kumar}
+    {Professor \& Chair}
+    {Computer Science Department}
+    {Rochester Institute of Technology}
+    {}{}
+    {mjkvcs [at] rit.edu}
+    {+1 585 475 4583}%
+    }
+    {\cvreference{Dr. Peizhao Hu}
+    {Assitant Professor}
+    {Computer Science Department}
+    {Rochester Institute of Technology}
+    {}{}
+    {ph [at] cs.rit.edu}
+    {+1 585 475 4712}%
+    }

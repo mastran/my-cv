@@ -1,0 +1,109 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[grey, modroman]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+%\usepackage[sc]{mathpazo}
+\usepackage{fourier}
+\linespread{1.05}
+\usepackage[T1]{fontenc}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\setlength{\topmargin}{-0.7in}
+\usepackage{calc}
+\setlength{\textheight}{\textheight+0.5in}
+\usepackage{layout}
+
+\usepackage{paralist}
+
+% personal data
+\firstname{Nibesh}
+\familyname{Shrestha}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{Computing and Information Science\\
+Rochester Institute of Technology\\
+1 Lomb Memorial Dr\\}{Rochester, NY 14623}    % optional, remove the line if not wanted
+%\mobile{mobile (optional)}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{nxs4564 [at] rit.edu}                      % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+% \input{sections/research_interests}
+\input{sections/education}
+\input{sections/employment}
+\input{sections/projects}
+\input{sections/honors}
+\input{sections/skills}
+\input{sections/references}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% \section{References}
+
+
+% \bigskip
+% \cvdoublecolumn{\cvreference{Greg Morrisett}
+%     {School of Engineering and Applied Sciences}
+%     {Harvard University}
+%     {}{}
+%     {greg [at] eecs.harvard.edu}
+%     {+1 617 495 2498}
+%     }
+%     {\cvreference{Michael Hicks}
+%     {Department of Computer Science}
+%     {University of Maryland}
+%     {}{}
+%     {mwh [at] cs.umd.edu}
+%     {+1 301 405 2710}
+%     }
+% \bigskip
+% \cvdoublecolumn{\cvreference{Chris Hawblitzel}
+%     {Microsoft Research Redmond}
+%     {}{}{}
+%     {chris.hawblitzel [at] microsoft.com}
+%     {+1 425 707 7398}
+%     }
+    
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%\cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+%\clearpage
+%\layout
+\end{document}
+
+
+%% end of file `template_en.tex'.
