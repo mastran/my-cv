@@ -1,0 +1,13 @@
+\section{Research Interests}
+\cvline{}{With growing interest towards decentralized infrastructure, Blockchain has enabled building a tamper-proof distributed public ledger in the face of untrusted parties. In particular, Bitcoin and smart contract platforms (e.g. Ethereum) have been used tremendously in financial industry and decentralized applications. These systems, however, require significant wasteful computation and incur large transaction latency. In contrast, traditional byzantine consensus protocols achieve fast finality and require minimal computation. I am interested in designing
+\begin{inparaenum}[(1)]
+\item low-latency scalable byzantine consensus protocols
+\item using byzantine consensus protocols to replace expensive Proof-of-Work mechanism
+\end{inparaenum}
+to create scalable and energy efficient blockchain designs.
+}{}
+
+
+% \subsection{Research Directions}
+% \cvlistitem{\textbf{Multi-Leader Commutative Byzantine Fault-Tolerance} 
+% Traditional byzantine fault-tolerant protocols such as PBFT, Fast byzantine Consensus, Zyzzyva, etc require a designated leader to propose, make progres and reach agreement. These protocols placed disuniform load on the leader and made overall performance depend on the leader (which could be byzantine). To replace a faulty leader, an expensive view change sub-protocol needs to be executed during which the system is stalled. In order to address these issues, I am currently investigating into a multi-leader byzantine consensus protocol wherein every node that has some command to propose can be the leader, hence uniformly distributing the load and doesn\textquotesingle t require view change sub-protocol. Further, the protocol exploits commutativity between commands allowing non-conflicting commands to be proposed concurrently (by multiple leaders) as long as the conflicting set of commands are ordered in the same order in all the nodes.}
